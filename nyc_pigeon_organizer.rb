@@ -4,13 +4,18 @@ def nyc_pigeon_organizer(data)
 
 
   data.each do |key,val|
+    
     val.each do |attrbute, names|
       names.each do |na|
         temp = {}
         temp1 = []
         temp1 << attrbute.to_s
         temp[key] = temp1
-        sorted_data[na] =temp
+        if sorted_data[na].keys.include?(key.to_s)   
+          sorted_data[na][key] << attrbute.to_s
+        else
+          sorted_data[na] =temp
+        end
         puts temp
       end #names
     end #val
@@ -39,3 +44,4 @@ pigeon_data = {
 }
 
 puts nyc_pigeon_organizer(pigeon_data)
+
