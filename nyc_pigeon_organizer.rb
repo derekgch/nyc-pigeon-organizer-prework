@@ -1,17 +1,22 @@
 
 def nyc_pigeon_organizer(data)
   sorted_data ={}
-  temp = []
+  temp = {}
 
   data.each do |key,val|
     val.each do |attrbute, names|
-      temp << "#{attrbute}"
       names.each do |na|
-        temp << na
+        temp1 = []
+        temp1 << attrbute.to_s
+        temp[key] = temp1
+        sorted_data[na] =temp
+        puts temp
+        
+
       end #names
     end #val
   end #data
-  temp
+  sorted_data
 end
 
 
