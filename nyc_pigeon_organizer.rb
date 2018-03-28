@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
           if sorted_data[na].keys.include?(key.to_s)
             sorted_data[na][key] << attrbute.to_s
           else
-            sorted_data[na] =temp
+            sorted_data[na]=sorted_data[na].merge(temp)
           end
         else
           sorted_data[na] =temp
