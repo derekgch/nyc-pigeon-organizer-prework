@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
         temp1 << attrbute.to_s
         temp[key] = temp1
         if sorted_data.keys.include?(na)
-          puts sorted_data[na].keys.include?(key)
+          puts key
           if sorted_data[na].keys.include?(key)
 
             sorted_data[na][key] << attrbute.to_s
