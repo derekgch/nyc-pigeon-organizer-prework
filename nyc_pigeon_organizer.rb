@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
       temp << "#{attrbute}"
       names.each do |na|
         temp << na
+      end #names
     end #val
   end #data
   temp
