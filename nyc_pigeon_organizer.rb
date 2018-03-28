@@ -5,7 +5,9 @@ def nyc_pigeon_organizer(data)
 
   data.each do |key,val|
     val.each do |attrbute, names|
-      temp << "#{attrbute} #{names}"
+      temp << "#{attrbute}"
+      names.each do |na|
+        temp << na
     end #val
   end #data
   temp
