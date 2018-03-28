@@ -10,9 +10,7 @@ def nyc_pigeon_organizer(data)
         temp1 << attrbute.to_s
         temp[key] = temp1
         sorted_data[na] =temp
-        puts temp
-        
-
+        #puts temp
       end #names
     end #val
   end #data
