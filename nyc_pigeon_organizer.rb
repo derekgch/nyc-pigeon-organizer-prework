@@ -2,9 +2,7 @@
 def nyc_pigeon_organizer(data)
   sorted_data ={}
 
-
   data.each do |key,val|
-
     val.each do |attrbute, names|
       names.each do |na|
         temp = {}
